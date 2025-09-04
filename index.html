@@ -17,8 +17,8 @@
             --black: #000000;
             --orange: #ff6b6b;
             --light-orange: #ff8e8e;
-            --white: #e6f1ff;
-            --light-gray: #8892b0;
+            --white: #ffffff;
+            --light-gray: #cccccc;
             --accent-blue: #64ffda;
         }
 
@@ -155,12 +155,13 @@
 
         /* Glassmorphism Containers */
         .glass-box {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.08);
             border-radius: 16px;
             padding: 30px;
             backdrop-filter: blur(12px);
             box-shadow: 0 8px 25px rgba(0,0,0,0.2);
             transition: transform 0.4s, box-shadow 0.4s;
+            color: var(--white);
         }
 
         .glass-box:hover {
@@ -186,7 +187,7 @@
         .hero-image {
             width: 100%;
             height: 400px;
-            background: rgba(255,255,255,0.05);
+            background: rgba(255,255,255,0.08);
             border-radius: 16px;
             display: flex;
             align-items: center;
@@ -213,9 +214,10 @@
             align-items: center;
             border-radius: 20px;
             backdrop-filter: blur(12px);
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.08);
             overflow: hidden;
             transition: transform 0.4s, box-shadow 0.4s;
+            color: var(--white);
         }
 
         .contact-card:hover {
@@ -261,11 +263,12 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.08);
             padding: 30px;
             border-radius: 12px;
             backdrop-filter: blur(10px);
             transition: transform 0.4s, box-shadow 0.4s;
+            color: var(--white);
         }
 
         .contact-form:hover {
@@ -373,13 +376,14 @@
             display: none;
             z-index: 2000;
             backdrop-filter: blur(10px);
-            transition: background 0.3s, transform 0.3s, color 0.3s;
+            transition: background 0.3s, transform 0.3s, color 0.3s, box-shadow 0.3s;
         }
 
         #scrollTopBtn:hover {
             background: rgba(255, 107, 107, 0.2);
             transform: translateY(-5px);
             color: var(--white);
+            box-shadow: 0 0 15px var(--orange), 0 0 30px var(--orange);
         }
 
         /* Responsive */
@@ -478,17 +482,10 @@
         <div class="container">
             <div class="social-links">
                 <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-whatsapp"></i></a>
             </div>
             <p>&copy; 2023 Your Name. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Scroll to Top Button -->
-    <button id="scrollTopBtn"><i class="fas fa-arrow-up"></i></button>
-
-    <script>
-        // Intersection Observer for section animations
-        const sections = document.querySelector
