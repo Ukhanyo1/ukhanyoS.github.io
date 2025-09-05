@@ -332,6 +332,8 @@
             background-color: #000000;
             padding: 40px 0 20px;
             text-align: center;
+            postion: relative;
+            z-index: 10;
         }
 
         .social-links {
@@ -392,4 +394,5 @@
         .contact-container {
             grid-template-columns: 1fr;
         }
+
     }
