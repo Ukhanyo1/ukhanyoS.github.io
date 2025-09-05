@@ -514,6 +514,23 @@
       }, { threshold: 0.2 });
 
       sections.forEach(section => observer.observe(section));
+
+        // Scroll-to-top button logic
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    scrollTopBtn.classList.add("show");
+  } else {
+    scrollTopBtn.classList.remove("show");
+  }
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
     </script>
 </body>
 </html>
+
