@@ -23,12 +23,21 @@
         }
 
         body {
-            background: linear-gradient(180deg,#0F172A, #22D3EE, #64748B, #F4F4F4);
-            color: var(--dark-grey);
-            line-height: 1.6;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-        }
+    color: var(--dark-grey);
+    line-height: 1.6;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background: linear-gradient(270deg, #ff6ec4, #7873f5, #1fd1f9);
+    background-size: 600% 600%;
+    animation: gradientAnimation 16s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 
         .container {
             width: 90%;
@@ -517,3 +526,4 @@
     </script>
 </body>
 </html>
+
