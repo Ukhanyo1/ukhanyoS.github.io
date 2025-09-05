@@ -363,6 +363,19 @@
             text-shadow: 0 0 15px var(--accent-blue), 0 0 30px var(--accent-blue);
         }
 
+/* Social Media Icons */
+.social-icon {
+  width: 40px; /* size of the icon */
+  height: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);                  /* slight grow on hover */
+  filter: drop-shadow(0 0 8px #00ff00);  /* green glow effect */
+}
+
+
         /* Scroll to Top Button */
         #scrollTopBtn {
             position: fixed;
@@ -420,5 +433,6 @@ h1::after, h2::after, h3::after {
 h1:hover::after, h2:hover::after, h3:hover::after {
   transform: scaleX(1); /* Animates underline on hover */
 }
+
 
 
