@@ -1,85 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ukhanyo Siyazi – Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Unique Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 </head>
 <body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <div class="logo-circle"></div>
+                Portfolio
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="#hire" class="btn btn-hire">Hire Me</a>
+                <a href="#download" class="btn btn-hire">Download CV</a>
+            </div>
+        </div>
+    </nav>
 
-  <!-- ---------- Navbar ---------- -->
-  <nav>
-    <h1 class="logo">Ukhanyo</h1>
-    <div class="menu-toggle">☰</div>
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    
 
-  <!-- ---------- Hero Section ---------- -->
-  <section id="hero" class="hero">
-    <div class="hero-text">
-      <h2>Welcome to My Portfolio</h2>
-      <p>Hi, I’m Ukhanyo Siyazi, a passionate developer and learner.</p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn">Hire Me</a>
-        <a href="cv.pdf" class="btn-outline">Download CV</a>
-      </div>
-    </div>
-    <div class="hero-img">
-      <img src="your-photo.jpg" alt="Profile Picture">
-    </div>
-  </section>
 
-  <!-- ---------- Skills Section ---------- -->
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills">
-      <div class="card">HTML & CSS</div>
-      <div class="card">JavaScript</div>
-      <div class="card">Python</div>
-      <div class="card">Java</div>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="container hero-container glass-box">
+            <div class="hero-text">
+                <h1 class="section-title">Welcome to My <span>Portfolio</span></h1>
+                <p>This is where you can showcase your introduction and key highlights.</p>
+            </div>
+            <div class="hero-image">
+                <p>Upload your picture here later</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- ---------- Certifications Section ---------- -->
-  <section id="certifications">
-    <h2>My Certifications</h2>
-    <div class="certifications">
-      <div class="card">Certification 1</div>
-      <div class="card">Certification 2</div>
-      <div class="card">Certification 3</div>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container glass-box">
+            <h1 class="section-title">Technical <span>Skills</span></h1>
+            <p>Showcase of skills with progress bars or badges.</p>
+        </div>
+    </section>
 
-  <!-- ---------- Contact Section ---------- -->
-  <section id="contact">
-    <h2>Get In Touch</h2>
-    <form action="#" method="post">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container glass-box">
+            <h1 class="section-title">My <span>Certifications</span></h1>
+            <p>Certification cards styled with glassmorphism.</p>
+        </div>
+    </section>
 
-  <!-- ---------- Footer ---------- -->
-  <footer>
-    <p>© 2025 Ukhanyo Siyazi. All rights reserved.</p>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <div class="orbit">
+                        <div class="orbit-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="orbit-icon"><i class="fas fa-phone"></i></div>
+                        <div class="orbit-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="orbit-icon"><i class="fas fa-clock"></i></div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder=" ">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-hire">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-  <!-- ---------- Mobile Nav Script ---------- -->
-  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('nav ul');
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
-  </script>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2025 Your Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
 
+    <!-- Fade-in Script -->
+    <script>
+      const sections = document.querySelectorAll("section");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.2 });
+
+      sections.forEach(section => observer.observe(section));
+    </script>
 </body>
 </html>
